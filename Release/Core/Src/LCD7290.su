@@ -1,0 +1,7 @@
+LCD7290.cpp:19:1:LCD_7290::~LCD_7290()	0	static
+LCD7290.cpp:19:1:virtual LCD_7290::~LCD_7290()	8	static
+LCD7290.cpp:14:1:LCD_7290::LCD_7290()	0	static
+LCD7290.cpp:24:6:void LCD_7290::init()	8	static
+LCD7290.cpp:30:6:void LCD_7290::reset()	8	static
+LCD7290.cpp:40:6:void LCD_7290::sendCmd(uint8_t*)	16	static
+LCD7290.cpp:48:6:void LCD_7290::sendData(const uint8_t*, int)	16	static
