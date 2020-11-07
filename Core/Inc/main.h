@@ -72,8 +72,18 @@ void Error_Handler(void);
 #define DOWN_GPIO_Port GPIOB
 #define UP_Pin GPIO_PIN_15
 #define UP_GPIO_Port GPIOB
+#define MOTOR_SLEEP_Pin GPIO_PIN_8
+#define MOTOR_SLEEP_GPIO_Port GPIOA
+#define MOTOR_DISABLE_Pin GPIO_PIN_9
+#define MOTOR_DISABLE_GPIO_Port GPIOA
+#define MOTOR_IN2_Pin GPIO_PIN_10
+#define MOTOR_IN2_GPIO_Port GPIOA
+#define MOTOR_IN1_Pin GPIO_PIN_11
+#define MOTOR_IN1_GPIO_Port GPIOA
 #define LED_OUT_Pin GPIO_PIN_3
 #define LED_OUT_GPIO_Port GPIOB
+#define FREQ_MEAS_Pin GPIO_PIN_4
+#define FREQ_MEAS_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
