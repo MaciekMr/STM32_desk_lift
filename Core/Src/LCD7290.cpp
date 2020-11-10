@@ -5,6 +5,9 @@
  *      Author: Maciek
  */
 
+
+//https://github.com/rogerclarkmelbourne/Arduino_STM32/blob/master/STM32F1/libraries/Lcd7920_STM/lcd7920_STM.cpp
+
 #include "main.h"
 #include "LCD7290.h"
 //#include ""

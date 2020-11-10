@@ -58,32 +58,36 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define U_METER_Pin GPIO_PIN_0
+#define U_METER_GPIO_Port GPIOA
+#define LCD_RST_Pin GPIO_PIN_4
+#define LCD_RST_GPIO_Port GPIOA
 #define DRV_CS_Pin GPIO_PIN_0
 #define DRV_CS_GPIO_Port GPIOB
 #define LCD_CS_Pin GPIO_PIN_1
 #define LCD_CS_GPIO_Port GPIOB
-#define LCD_RST_Pin GPIO_PIN_2
-#define LCD_RST_GPIO_Port GPIOB
-#define LEVEL_2_Pin GPIO_PIN_12
-#define LEVEL_2_GPIO_Port GPIOB
-#define LEVEL_1_Pin GPIO_PIN_13
-#define LEVEL_1_GPIO_Port GPIOB
-#define DOWN_Pin GPIO_PIN_14
-#define DOWN_GPIO_Port GPIOB
-#define UP_Pin GPIO_PIN_15
-#define UP_GPIO_Port GPIOB
-#define MOTOR_SLEEP_Pin GPIO_PIN_8
-#define MOTOR_SLEEP_GPIO_Port GPIOA
-#define MOTOR_DISABLE_Pin GPIO_PIN_9
-#define MOTOR_DISABLE_GPIO_Port GPIOA
-#define MOTOR_IN2_Pin GPIO_PIN_10
-#define MOTOR_IN2_GPIO_Port GPIOA
-#define MOTOR_IN1_Pin GPIO_PIN_11
-#define MOTOR_IN1_GPIO_Port GPIOA
-#define LED_OUT_Pin GPIO_PIN_3
-#define LED_OUT_GPIO_Port GPIOB
-#define FREQ_MEAS_Pin GPIO_PIN_4
-#define FREQ_MEAS_GPIO_Port GPIOB
+#define BUT_IN1_Pin GPIO_PIN_12
+#define BUT_IN1_GPIO_Port GPIOB
+#define BUT_IN2_Pin GPIO_PIN_13
+#define BUT_IN2_GPIO_Port GPIOB
+#define BUT_IN3_Pin GPIO_PIN_14
+#define BUT_IN3_GPIO_Port GPIOB
+#define BUT_IN4_Pin GPIO_PIN_15
+#define BUT_IN4_GPIO_Port GPIOB
+#define DRV_SLEEP_Pin GPIO_PIN_8
+#define DRV_SLEEP_GPIO_Port GPIOA
+#define DRV_DISABLE_Pin GPIO_PIN_9
+#define DRV_DISABLE_GPIO_Port GPIOA
+#define DRV_IN2_Pin GPIO_PIN_10
+#define DRV_IN2_GPIO_Port GPIOA
+#define DRV_IN1_Pin GPIO_PIN_11
+#define DRV_IN1_GPIO_Port GPIOA
+#define CHRG_CONTROLL_Pin GPIO_PIN_4
+#define CHRG_CONTROLL_GPIO_Port GPIOB
+#define RELAY_CTRL_Pin GPIO_PIN_8
+#define RELAY_CTRL_GPIO_Port GPIOB
+#define ALERT_Pin GPIO_PIN_9
+#define ALERT_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

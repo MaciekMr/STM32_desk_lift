@@ -61,8 +61,8 @@ Table_lift.bin \
 all: Table_lift.elf secondary-outputs
 
 # Tool invocations
-Table_lift.elf: $(OBJS) $(USER_OBJS) C:\Users\Maciek\STM32CubeIDE\workspace_1.2.0\Table_lift\STM32F030C8TX_FLASH.ld
-	arm-none-eabi-g++ -o "Table_lift.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\Maciek\STM32CubeIDE\workspace_1.2.0\Table_lift\STM32F030C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Table_lift.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Table_lift.elf: $(OBJS) $(USER_OBJS) C:\Users\Maciek\STM32CubeIDE\workspace_1.2.0\Table_lift\STM32F030CCTX_FLASH.ld
+	arm-none-eabi-g++ -o "Table_lift.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\Maciek\STM32CubeIDE\workspace_1.2.0\Table_lift\STM32F030CCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Table_lift.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

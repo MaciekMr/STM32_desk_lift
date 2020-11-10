@@ -1,8 +1,8 @@
 /**
   ******************************************************************************
-  * @file      startup_stm32f030x8.s
+  * @file      startup_stm32f030xc.s
   * @author    MCD Application Team
-  * @brief     STM32F030x8 devices vector table for GCC toolchain.
+  * @brief     STM32F030xc/STM32F030xb devices vector table for GCC toolchain.
   *            This module performs:
   *                - Set the initial SP
   *                - Set the initial PC == Reset_Handler,
@@ -156,7 +156,7 @@ g_pfnVectors:
   .word  0                                 /* Reserved                     */
   .word  TIM3_IRQHandler                   /* TIM3                         */
   .word  TIM6_IRQHandler                   /* TIM6                         */
-  .word  0                                 /* Reserved                     */
+  .word  TIM7_IRQHandler                   /* TIM7                         */
   .word  TIM14_IRQHandler                  /* TIM14                        */
   .word  TIM15_IRQHandler                  /* TIM15                        */
   .word  TIM16_IRQHandler                  /* TIM16                        */
@@ -167,8 +167,7 @@ g_pfnVectors:
   .word  SPI2_IRQHandler                   /* SPI2                         */
   .word  USART1_IRQHandler                 /* USART1                       */
   .word  USART2_IRQHandler                 /* USART2                       */
-  .word  0                                 /* Reserved                     */
-  .word  0                                 /* Reserved                     */
+  .word  USART3_6_IRQHandler               /* USART3, USART4, USART5, USART6 */
   .word  0                                 /* Reserved                     */
 
 /*******************************************************************************
@@ -239,6 +238,9 @@ g_pfnVectors:
   .weak      TIM6_IRQHandler
   .thumb_set TIM6_IRQHandler,Default_Handler
 
+  .weak      TIM7_IRQHandler
+  .thumb_set TIM7_IRQHandler,Default_Handler
+
   .weak      TIM14_IRQHandler
   .thumb_set TIM14_IRQHandler,Default_Handler
 
@@ -268,6 +270,9 @@ g_pfnVectors:
 
   .weak      USART2_IRQHandler
   .thumb_set USART2_IRQHandler,Default_Handler
+
+  .weak      USART3_6_IRQHandler
+  .thumb_set USART3_6_IRQHandler,Default_Handler
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
